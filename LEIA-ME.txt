@@ -1,0 +1,25 @@
+MICRO SHOW — arquivos para GitHub Pages
+
+ARQUIVOS
+- index.html: roleta original, com o registro do modo offline.
+- manifest.webmanifest: permite instalar a página na tela inicial.
+- sw.js: armazena os arquivos para uso offline depois do primeiro acesso.
+- icon.svg: ícone da aplicação.
+
+PUBLICAÇÃO
+1. Crie um repositório no GitHub.
+2. Envie os quatro arquivos para a raiz do repositório.
+3. No GitHub, abra Settings > Pages.
+4. Em Build and deployment, escolha Deploy from a branch.
+5. Selecione a branch main e a pasta /(root), depois salve.
+6. Aguarde o GitHub Pages publicar e abra o endereço informado.
+
+USO OFFLINE
+- A primeira abertura precisa de internet para carregar e armazenar os arquivos.
+- Depois, abra o link novamente enquanto ainda estiver online para confirmar que carregou.
+- No celular, use “Adicionar à tela inicial” pelo menu do navegador.
+- Depois que a instalação/carregamento inicial terminar, a roleta pode abrir sem internet.
+- O modo offline depende de HTTPS; o GitHub Pages fornece HTTPS.
+
+OBSERVAÇÃO
+O visual e a lógica da roleta foram preservados. O modo offline é ativado pelo Service Worker depois da publicação em HTTPS.
